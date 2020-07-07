@@ -4,6 +4,8 @@ import Login from '../components/Login.vue'
 import Home from '../components/Home.vue'
 import Welcome from '../components/Welcome'
 import Users from '../components/user/Users'
+import Rights from '../components/power/Rights'
+import Roles from '../components/power/Roles'
 
 const originalPush = Router.prototype.push
   Router.prototype.push = function push(location) {
@@ -34,9 +36,17 @@ const router = new Router({
         {
           path: '/users',
           component: Users
-        }
+        },
+        {
+          path: '/rights',
+          component: Rights
+        },
+        {
+          path: '/roles',
+          component: Roles
+        },
       ]
-    }
+    },
   ]
 })
 
