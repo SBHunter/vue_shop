@@ -11,6 +11,7 @@ import Params from '../components/goods/Params'
 import List from '../components/goods/List'
 import Add from '../components/goods/Add'
 import Order from '../components/order/Order'
+import Report from '../components/report/Report'
 
 const originalPush = Router.prototype.push
   Router.prototype.push = function push(location) {
@@ -69,6 +70,9 @@ const router = new Router({
         {
           path: '/orders',
           component: Order
+        }, {
+          path: '/reports',
+          component:  Report
         },
       ]
     },
